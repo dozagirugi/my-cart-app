@@ -1,0 +1,22 @@
+@font-face {
+  font-family: yangju;
+  src: url("./assets/fonts/YangJuByeolsan.ttf.ttf");
+  
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: yangju;
+	font-size: 16px;
+	background-color: #f6f8fa;
+}
+
+.align_center {
+	display: flex;
+	align-items: center;
+}
