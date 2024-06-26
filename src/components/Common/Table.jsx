@@ -1,7 +1,5 @@
 import "./Table.css";
 
-import React from "react";
-
 const Table = ({ headings, children }) => {
   return (
     <table className="common_table">
