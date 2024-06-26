@@ -4,6 +4,7 @@ import FeaturedProducts from "./FeaturedProducts";
 
 import iphone from "../../assets/iphone-14-pro.webp";
 import macBook from "../../assets/mac-system-cut.jfif";
+import ProductsPage from "../Products/ProductsPage";
 
 const HomePage = () => {
   return (
@@ -15,7 +16,7 @@ const HomePage = () => {
         image={iphone}
       />
 
-      <FeaturedProducts />
+      <ProductsPage />
 
       <HeroSection
         title="궁극의 장비를 세팅하세요 어쩌구"

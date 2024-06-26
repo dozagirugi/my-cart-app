@@ -1,10 +1,12 @@
 import React from "react";
+import ProductsSidebar from "./ProductsSidebar";
+import ProductsList from "./ProductsList";
 
 const ProductsPage = () => {
   return (
     <section className="products_page">
-      {/* {왼쪽 카테고리} */}
-      {/* {상품목록} */}
+      <ProductsSidebar />
+      <ProductsList />
     </section>
   );
 };

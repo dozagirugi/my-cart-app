@@ -1,0 +1,33 @@
+.single_product {
+    justify-content: center;
+    padding: 32px 48px;
+}
+
+.single_product_thumbnails {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 8px;
+    margin: 16px;
+}
+
+.single_product_thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.single_product_display {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.selected_image {
+    transform: scale(1.12);
+}
