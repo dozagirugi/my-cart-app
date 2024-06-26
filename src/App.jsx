@@ -1,13 +1,16 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
+import HomePage from "./components/Home/HomePage";
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <Navbar />
-      <main>라우팅</main>
+      <main>
+        <HomePage />
+      </main>
     </div>
   );
-}
+};
 
 export default App;
