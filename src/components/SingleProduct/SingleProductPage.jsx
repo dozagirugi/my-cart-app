@@ -1,3 +1,4 @@
+import QuantityInput from "./QuantityInput";
 import "./SingleProductPage.css";
 import { useState } from "react";
 
@@ -26,7 +27,6 @@ const SingleProductPage = () => {
             <img
               key={index}
               src={image}
-              alt={product.title}
               className={selectedImage === index ? "selected_image" : ""}
               onClick={() => setSelectedImage(index)}
             />
@@ -40,7 +40,21 @@ const SingleProductPage = () => {
         />
       </div>
 
-      <div className="single_product_details"></div>
+      <div className="single_product_details">
+        <h1 className="single_product_title">{product.title}</h1>
+        <p className="single_product_description">{product.description}</p>
+        <p className="single_product_price">
+          ￦{product.price.toLocaleString("ko-KR")}원
+        </p>
+
+        <h2 className="quantity_title">구매개수:</h2>
+        <div className="align_center quantity_input">
+          <QuantityInput />
+        </div>
+        <h3 className="stock_title">재고:{product.stock}</h3>
+
+        <button className="search_button add_cart">장바구니 추가</button>
+      </div>
     </section>
   );
 };

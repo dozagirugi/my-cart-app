@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./components/Home/HomePage";
 import SingleProductPage from "./components/SingleProduct/SingleProductPage";
+import CartPage from "./components/Cart/CartPage";
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       <Navbar />
       <main>
         {/* <HomePage /> */}
-        <SingleProductPage />
+        {/* <SingleProductPage /> */}
+        <CartPage />
       </main>
     </div>
   );
