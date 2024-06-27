@@ -1,10 +1,14 @@
 import "./SignupPage.css";
 
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import user from "../../assets/user.webp";
 
 const SingupPage = () => {
+  const [profilePic, setProfilePic] = useState(null);
+  console.log(profilePic);
+
   const {
     register,
     handleSubmit,
@@ -24,10 +28,20 @@ const SingupPage = () => {
 
         <div className="image_input_section">
           <div className="image_preview">
-            <img src={user} />
+            <img
+              src={profilePic ? URL.createObjectURL(profilePic) : user}
+              id="file-ip-1-preview"
+            />
           </div>
-          <label className="image_laber">이미지 업로드</label>
-          <input type="file" id="file-ip-1" className="image_input" />
+          <label htmlFor="file-ip-1" className="image_label">
+            이미지 업로드
+          </label>
+          <input
+            type="file"
+            id="file-ip-1"
+            className="image_input"
+            onChange={(e) => setProfilePic(e.target.files[0])}
+          />
         </div>
 
         <div className="form_inputs signup_form_input">
