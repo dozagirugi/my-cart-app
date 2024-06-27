@@ -1,5 +1,7 @@
 import "./Navbar.css";
 
+import { NavLink } from "react-router-dom";
+
 import LinkWithIcon from "./LinkWithIcon";
 import rocket from "../../assets/rocket.png";
 import star from "../../assets/glowing-star.png";
@@ -31,9 +33,9 @@ const Navbar = () => {
           <LinkWithIcon title="가입" link="/signup" emoji={memo} />
           <LinkWithIcon title="내 주문" link="/myorder" emoji={order} />
           <LinkWithIcon title="로그아웃" link="/" emoji={lock} />
-          <a href="/cart" className="align_center">
+          <NavLink to="/cart" className="align_center">
             장바구니 <p className="align_center cart_counts">0</p>
-          </a>
+          </NavLink>
         </div>
       </div>
     </nav>

@@ -62,3 +62,7 @@
 	font-size: 15px;
 	margin-left: 5px;
 }
+
+.navbar_links > a.active {
+	font-weight: 1600;
+}

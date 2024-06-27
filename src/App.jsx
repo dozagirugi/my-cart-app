@@ -1,4 +1,5 @@
 import "./App.css";
+import FeaturedProducts from "./components/Home/FeaturedProducts";
 import Navbar from "./components/Navbar/Navbar";
 import Routing from "./components/Routing/Routing";
 
